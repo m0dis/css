@@ -12,17 +12,29 @@ body {
 
 .container {
     background-color: #FFFFFF;
-    border-radius: 20px;
+    border-radius: 16px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     max-width: 400px;
     padding: 20px 30px;
     text-align: center;
-    border-top: 5px solid #FF6D5A;
+    position: relative;
+    overflow: hidden;
+}
+
+.container::before {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 8px;
+    background-color: #FF6D5A; /* n8n Orange */
+    position: absolute;
+    top: 0;
+    left: 0;
 }
 
 h1 {
     font-size: 22px;
-    color: #FF6D5A;
+    color: #FF6D5A; /* n8n Orange */
     margin-bottom: 10px;
 }
 
